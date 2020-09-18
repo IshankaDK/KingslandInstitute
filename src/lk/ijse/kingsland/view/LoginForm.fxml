@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="626.0" prefWidth="595.0" style="-fx-background-color: #10ac84;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.kingsland.controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#10ac84" height="428.0" layoutX="53.0" layoutY="101.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="490.0" />
+      <Label alignment="CENTER" layoutX="111.0" layoutY="133.0" prefHeight="52.0" prefWidth="378.0" text="User Login" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="111.0" layoutY="223.0" prefHeight="52.0" prefWidth="378.0" promptText="UserName" text="admin">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="111.0" layoutY="313.0" prefHeight="52.0" prefWidth="378.0" promptText="Password" text="1234">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="191.0" layoutY="394.0" onAction="#btnLoginOnAction" prefHeight="52.0" prefWidth="218.0" style="-fx-background-color: #1dd1a1;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Hyperlink fx:id="hyprCreateNew" alignment="CENTER" layoutX="190.0" layoutY="468.0" onAction="#hyprCreateNewOnAction" prefHeight="34.0" prefWidth="225.0" text="Create an account" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.kingsland.controller.DefaultFormController">
+   <children>
+      <AnchorPane fx:id="root" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="738.0" style="-fx-background-color: #d2dae2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Label layoutX="24.0" layoutY="20.0" prefHeight="53.0" prefWidth="217.0" text="DashBoard" textFill="#34495e">
+               <font>
+                  <Font name="Bauhaus 93" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="96.0" prefHeight="142.0" prefWidth="314.0" style="-fx-background-color: #182C61;" />
+            <Label layoutX="389.0" layoutY="96.0" prefHeight="142.0" prefWidth="314.0" style="-fx-background-color: #0c2461;" />
+            <Label alignment="CENTER" layoutX="99.0" layoutY="107.0" prefHeight="53.0" prefWidth="181.0" text="Total Students" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="456.0" layoutY="107.0" prefHeight="53.0" prefWidth="181.0" text="Total Courses" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotStudent" alignment="CENTER" layoutX="120.0" layoutY="166.0" prefHeight="53.0" prefWidth="141.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Haettenschweiler" size="61.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotCourse" alignment="CENTER" layoutX="475.0" layoutY="166.0" prefHeight="53.0" prefWidth="141.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Haettenschweiler" size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="285.0" prefHeight="170.0" prefWidth="394.0" style="-fx-background-color: #3c6382;" />
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="172.0" layoutY="303.0" prefHeight="65.0" prefWidth="383.0" style="-fx-background-color: #60a3bc;" text="2020-01-01" textFill="#eb2f06">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="173.0" layoutY="377.0" prefHeight="65.0" prefWidth="383.0" style="-fx-background-color: #60a3bc;" text="00:00:00" textFill="#eb2f06">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

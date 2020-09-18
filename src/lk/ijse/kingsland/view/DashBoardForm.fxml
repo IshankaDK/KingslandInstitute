@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.kingsland.controller.DashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="585.0" prefWidth="217.0" style="-fx-background-color: #1e272e;">
+         <children>
+            <Label layoutX="28.0" layoutY="5.0" prefHeight="65.0" prefWidth="157.0" text="Kingsland" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Separator layoutX="16.0" layoutY="78.0" opacity="0.58" prefHeight="21.0" prefWidth="174.0" />
+            <Label layoutX="95.0" layoutY="52.0" text="Since 2000" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDashBoard" layoutX="19.0" layoutY="128.0" onAction="#btnDashBoardOnAction" prefHeight="59.0" prefWidth="164.0" style="-fx-background-color: #273c75;" text="DashBoard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnStudent" layoutX="21.0" layoutY="271.0" onAction="#btnStudentOnAction" prefHeight="59.0" prefWidth="164.0" style="-fx-background-color: #273c75;" text="Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCourse" layoutX="22.0" layoutY="344.0" onAction="#btnCourseOnAction" prefHeight="59.0" prefWidth="164.0" style="-fx-background-color: #273c75;" text="Courses" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnRegister" layoutX="19.0" layoutY="199.0" onAction="#btnRegisterOnAction" prefHeight="59.0" prefWidth="164.0" style="-fx-background-color: #273c75;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnReport" layoutX="22.0" layoutY="415.0" onAction="#btnReportOnAction" prefHeight="59.0" prefWidth="164.0" style="-fx-background-color: #273c75;" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="217.0" layoutY="-1.0" prefHeight="97.0" prefWidth="728.0" style="-fx-background-color: #0a3d62;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="81.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" textFill="#fffbfb" />
+            <ImageView fx:id="imgHome" fitHeight="72.0" fitWidth="74.0" layoutX="23.0" layoutY="18.0" onMouseReleased="#imgHomeOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/img-home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="119.0" layoutY="15.0" prefHeight="81.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" textFill="#fffbfb" />
+            <Label layoutX="566.0" layoutY="14.0" prefHeight="81.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" textFill="#fffbfb" />
+            <Label layoutX="212.0" layoutY="14.0" prefHeight="81.0" prefWidth="87.0" style="-fx-background-color: #ffffff;" textFill="#fffbfb" />
+            <ImageView fx:id="imgStudent" fitHeight="72.0" fitWidth="74.0" layoutX="120.0" layoutY="22.0" onMouseReleased="#imgStudentOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/16869399861582967234-128.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgCourse" fitHeight="66.0" fitWidth="87.0" layoutX="212.0" layoutY="21.0" onMouseReleased="#imgCourseOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/course.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="74.0" layoutX="567.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/setting.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="652.0" layoutY="14.0" prefHeight="81.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" textFill="#fffbfb" />
+            <ImageView fx:id="imgClose" fitHeight="72.0" fitWidth="74.0" layoutX="652.0" layoutY="18.0" onMouseReleased="#imgCloseOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="217.0" layoutY="95.0" prefHeight="490.0" prefWidth="728.0" />
+   </children>
+</AnchorPane>
