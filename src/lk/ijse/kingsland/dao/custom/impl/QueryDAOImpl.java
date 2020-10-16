@@ -38,7 +38,7 @@ public class QueryDAOImpl implements QueryDAO {
 
     @Override
     public int getTotStudent() throws Exception {
-       ResultSet set = CrudUtil.execute("SELECT count(id) from student");
+       ResultSet set = CrudUtil.execute("SELECT count(id) from Student");
        if(set.next()){
           return set.getInt(1);
        }

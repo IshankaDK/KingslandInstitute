@@ -16,6 +16,7 @@ public class RegistrationBoImpl implements RegistrationBo {
     
     @Override
     public boolean saveRegistration(RegistrationDTO dto) throws Exception {
+
         return dao.save(new Registration(dto.getRegNo(),dto.getRegDate(),dto.getRegFee(),
                 dto.getStudentId(),dto.getCourseCode()));
     }

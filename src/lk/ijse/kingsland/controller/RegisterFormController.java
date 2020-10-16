@@ -64,16 +64,21 @@ public class RegisterFormController {
     }
 
     public void btnSaveOnAction(ActionEvent actionEvent) throws Exception {
-        Connection connection = DBConnection.getInstance().getConnection();
+       /* Connection connection = DBConnection.getInstance().getConnection();
         connection.setAutoCommit(false);
-       try{
-           boolean isSaved =  stBo.saveStudent(new StudentDTO(txtId.getText(),txtName.getText(),txtAddress.getText(),
-                    txtContact.getText(),txtDob.getText(),txtGender.getText()));
+       try{*/
+          /* boolean isSaved =  stBo.saveStudent(new StudentDTO(txtId.getText(),txtName.getText(),txtAddress.getText(),
+                    txtContact.getText(),txtDob.getText(),txtGender.getText()));*/
+
            boolean isRegistered = bo.saveRegistration(new RegistrationDTO(Integer.parseInt(txtRegId.getText()),txtRegDate.getText(),txtRegFee.getText(),
                     txtId.getText(),txtCourseId.getText()));
-
+           if(isRegistered) {
+               new Alert(Alert.AlertType.CONFIRMATION, "Saved",
+                       ButtonType.OK).show();
+           }
+/*
            if(isSaved==true && isRegistered == true){
-               connection.commit();
+              connection.commit();
                new Alert(Alert.AlertType.CONFIRMATION, "Saved",
                        ButtonType.OK).show();
                return ;
@@ -81,10 +86,9 @@ public class RegisterFormController {
                connection.rollback();
                return ;
            }
-
        }finally {
                connection.setAutoCommit(true);
-       }
+       }*/
 
     }
 
